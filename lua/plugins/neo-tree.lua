@@ -15,10 +15,9 @@ return {
             ["<space>"] = "toggle_node",
             ["<cr>"] = "open",
           },
-          title = "",
-          show_root = false,
         },
       })
+
       vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { desc = "Toggle NeoTree" })
     end,
   },

@@ -1,7 +1,8 @@
--- bootstrap lazy.nvim, LazyVim and your plugins
+-- bootstrap lazy.nvim, lazyvim and your plugins
 
 require("config.autocmds")
 require("config.keymaps")
 require("config.options")
 require("config.lazy")
 require("config.shell")
+-- require("plugins.nvim-web-devicons")
