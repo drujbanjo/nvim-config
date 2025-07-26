@@ -26,7 +26,6 @@ return {
           },
         },
       },
-
       highlights = {
         fill = {
           bg = "#15151f", -- фон всей tab-строки
@@ -34,11 +33,13 @@ return {
         background = {
           fg = "#5c5f77",
           bg = "#1b1b26", -- неактивный таб
+          bold = false,
         },
         buffer_selected = {
           fg = "#c8d3f5",
           bg = "#1e1e2e", -- активный таб
           bold = true,
+          italic = false,
         },
         buffer_visible = {
           fg = "#5c5f77",
