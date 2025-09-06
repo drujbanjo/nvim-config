@@ -52,6 +52,11 @@ return {
         end,
       },
 
+      prismals = {
+        -- можно добавить настройки, если нужно
+        settings = {},
+      },
+
       -- Lua
       lua_ls = {
         settings = {

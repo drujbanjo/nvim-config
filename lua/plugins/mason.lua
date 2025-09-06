@@ -11,7 +11,7 @@ return {
       "eslint-lsp",
       "prettier",
       "tailwindcss-language-server",
-
+      "prisma-language-server",
       -- Lua
       "lua-language-server",
     },

@@ -26,7 +26,7 @@ return {
         telescope = {
           enabled = true,
         },
-        neotree = true,
+        -- neotree = true,
       },
     })
 

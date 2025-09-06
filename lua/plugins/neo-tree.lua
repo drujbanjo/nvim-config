@@ -7,16 +7,17 @@ return {
       "nvim-tree/nvim-web-devicons",
       "MunifTanjim/nui.nvim",
     },
-    config = function()
-      require("neo-tree").setup({
-        window = {
-          width = 25,
-          mappings = {
-            ["<space>"] = "toggle_node",
-            ["<cr>"] = "open",
-          },
+    opts = {
+      window = {
+        width = 30,
+        mappings = {
+          ["<space>"] = "toggle_node",
+          ["<cr>"] = "open",
         },
-      })
+      },
+    },
+    config = function(_, opts)
+      require("neo-tree").setup(opts)
 
       vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { desc = "Toggle NeoTree" })
       vim.keymap.set("n", "<leader>E", ":Neotree toggle<CR>", { desc = "Toggle NeoTree" })
