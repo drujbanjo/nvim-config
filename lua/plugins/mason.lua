@@ -12,8 +12,11 @@ return {
       "prettier",
       "tailwindcss-language-server",
       "prisma-language-server",
+      "graphql-language-service-cli",
       -- Lua
       "lua-language-server",
+      -- Rust
+      "rust-analyzer",
     },
   },
 }

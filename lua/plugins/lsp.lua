@@ -56,6 +56,7 @@ return {
         -- можно добавить настройки, если нужно
         settings = {},
       },
+      graphql = {},
 
       -- Lua
       lua_ls = {
@@ -63,6 +64,15 @@ return {
           Lua = {
             diagnostics = { globals = { "vim" } },
             workspace = { checkThirdParty = false },
+          },
+        },
+      },
+
+      rust_analyzer = {
+        settings = {
+          ["rust-analyzer"] = {
+            cargo = { allFeatures = true },
+            checkOnSave = { command = "clippy" },
           },
         },
       },

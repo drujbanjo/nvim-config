@@ -20,6 +20,8 @@ return {
       svelte = { "prettier" },
       lua = { "stylua" },
       prisma = { "prismaFmt" },
+
+      rust = { "rustfmt" },
     },
   },
 }
