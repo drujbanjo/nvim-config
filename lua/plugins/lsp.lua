@@ -33,11 +33,19 @@ return {
           format = true,
         },
       },
+
+      -- Tailwind
       tailwindcss = {
         root_dir = function(fname)
+          if type(fname) ~= "string" then
+            return nil
+          end
+
           local startpath = vim.fs.dirname(fname)
-          local pkg = vim.fs.find("package.json", { path = startpath, upward = true })[1]
-          if not pkg then
+          local found = vim.fs.find("package.json", { path = startpath, upward = true })
+          local pkg = found and found[1]
+
+          if type(pkg) ~= "string" then
             return nil
           end
 
@@ -52,10 +60,7 @@ return {
         end,
       },
 
-      prismals = {
-        -- можно добавить настройки, если нужно
-        settings = {},
-      },
+      prismals = { settings = {} },
       graphql = {},
 
       -- Lua
@@ -68,6 +73,7 @@ return {
         },
       },
 
+      -- Rust
       rust_analyzer = {
         settings = {
           ["rust-analyzer"] = {
